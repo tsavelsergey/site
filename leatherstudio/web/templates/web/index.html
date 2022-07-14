@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leatherstudio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'web/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'web/style.css' %}">
+</head>
+<body>
+    <header class="s_header">
+        <div class="header_logo">
+            <a href="{% url 'home' %}" class="site_logo"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+        <nav class="header_nav">
+           <a href="#0" class="header_nav__close" title="close"><span>Закрыть</span></a>
+            <div class="header_nav__content">
+                <h3>Меню</h3>
+                <ul class="header_nav__list">
+                    <li class="current"><a href="#home" title="home">Главная</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#info" title="info">О нас</a></li>
+                </ul>
+                <ul class="header_nav__social">
+                    <li><a href="#">Соцсети</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#0" class="header_nav__toggle">
+            <span class="header_menu_text">Меню</span>
+        </a>
+    </header>
+</body>
+</html>
