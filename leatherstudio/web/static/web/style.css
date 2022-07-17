@@ -26,18 +26,29 @@
     border: none;
     wid
 }
+
 .header_nav {
-    background: rgb(107, 33, 33);
+    background: rgb(33, 33, 33);
     color: rgba(255, 255, 255, 0.25);
     font-family: "montserrat-light", sans-serif;
     font-size 1.3rem;
     padding: 3.6rem, 3rem, 3.6rem, 3.6rem;
     height: 100%;
-    width: 300px;
-    position: fixed;;
+    width: 200px;
+    position: fixed;
     right: 0;
     top: 0;
     /* visibility: hidden; */
+}
+.index_img h1 {
+    font-family: "montserrat-light", sans-serif;
+    font-size: 20px;
+    position: fixed;
+    height: 50%;
+    width: 200px;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    margin-top: .9rem;
 }
 .header_nav a {
     color: rgba(255, 255, 255, 0.5);
@@ -49,7 +60,7 @@
 }
 .header_nav h3 {
     font-family: "montserrat-light", sans-serif;
-    font-size: 11px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
@@ -121,4 +132,79 @@
     -webkit-transform: rotate(-45deg)
     -ms-transform: rotate(-45deg)
     transform: rotate(-45deg)
+}
+.static-grid-item
+ {
+    display: inline-dlock;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 50px;
+    top: 20%;
+    z-index: 501;
+}
+.post_img1 img {
+    width: 350px;
+    height: 400px;
+}
+.index_img {
+    display: inline-dlock;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 100px;
+    top: 10%;
+    z-index: 501;
+}
+.index_img img {
+    width: 500px;
+    height: 700px;
+}
+
+.index_img a {
+    display: block;
+    margin: 9px 0 0 0;
+    padding: 0;
+    border: none;
+    wid
+}
+.index_img h1 {
+    font-family: "montserrat-light", sans-serif;
+    position: absolute;
+    font-size: 20px;
+    left: 120px;
+    top: 10%;
+    text-align: justify;
+}
+.tel {
+    font-family: "montserrat-light", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    margin-top: .9rem;
+}
+.e-mail,
+.address {
+    font-family: "montserrat-light", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    margin-top: .9rem;
+}
+.soc {
+    font-family: "montserrat-light", sans-serif;
+    position: absolute;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    margin-top: .9rem;
+    left: 120px;
+    top: 10%;
+}
+.title {
+    font-family: "montserrat-light", sans-serif;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    margin-top: .9rem;
 }

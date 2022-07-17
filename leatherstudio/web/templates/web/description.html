@@ -1,0 +1,22 @@
+{% extends 'web/base.html' %}
+
+{% block title %}
+Description
+{% endblock %}
+
+{% block header %}
+Описание
+{% endblock %}
+
+{% block content %}
+    {% for post in pr %}
+        {% if post.name %}
+            <div class="post_img1">
+                <img src=" {{ post.img.url }}" alt="">
+                <h4>{{ post.description }}</h4>
+                <p>Цена: {{ post.price }}.р</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}

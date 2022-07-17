@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title class="title">{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'web/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'web/style.css' %}">
+</head>
+<body>
+    <h1>{% block header %}{% endblock %}</h1>
+<!--    <div class="header_logo">-->
+<!--        <a href="{% url 'home' %}" class="site_logo"><img src="{% static 'images/logo.png' %}" alt=""></a>-->
+<!--    </div>-->
+    <nav class="header_nav">
+<!--           <a href="#0" class="header_nav__close" title="close"><span>Закрыть</span></a>-->
+        <div class="header_nav__content">
+            <h3>Меню</h3>
+            <ul class="header_nav__list">
+                <li class="current"><a href= "{% url 'home' %}" title="home">Главная</a></li>
+                <li><a href= "{% url 'catalog' %}" >Каталог</a></li>
+                <li><a href="{% url 'info' %}" title="info">О нас</a></li>
+            </ul>
+            <ul class="header_nav__social">
+                <li><a href="{% url 'social' %}">Соцсети</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
