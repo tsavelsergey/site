@@ -4,16 +4,16 @@
 leatherstudio
 {% endblock %}
 
-{% block header %}
-Главная строница
-{% endblock %}
 
 {% block content %}
     {% load static %}
 
     <div class="index_img">
-        <h1>Магазин изделий из натуральной кожи ручной работы</h1>
-        <a href="{% url 'catalog' %}" class="index_img2 "><img src="{% static 'images/index.jpg' %}" alt=""></a>
+<!--        <h1>Магазин изделий из натуральной кожи ручной работы</h1>-->
+        <a href="{% url 'catalog' %}"><img src="{% static 'images/index.jpg' %}" alt="" class="text"></a>
+    </div>
+    <div class="index_w">
+        <a href="{% url 'catalog' %}" class="index_w2 ">Магазин изделий из натуральной кожи ручной работы</a>
     </div>
 
 {% endblock %}

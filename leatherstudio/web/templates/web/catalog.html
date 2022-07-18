@@ -11,12 +11,16 @@ Catalog
 {% block content %}
     {% if pr %}
         {% for post in pr %}
-            <div class="post_img1">
+            <div class="post_img">
                 <img src=" {{ post.img.url }}" alt="">
-                <h3>Наименование таовара: {{ post.name }}</h3>
-                <p>Описание:  {{ post.description }}</p>
-                <h3>Цена: {{ post.price }}.р</h3>
+                <div class="post_info">
+                    <h3>Наименование таовара: {{ post.name }}</h3>
+                    <p>Описание:  {{ post.description }}</p>
+                    <h3>Цена: {{ post.price }}.р</h3>
+                </div>
             </div>
+
+
         {% endfor %}
     {% else %}
         <p>На данный момент нет товара</p>
