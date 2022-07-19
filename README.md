@@ -6,5 +6,6 @@ You can view the contact information to communicate with the seller.
 
 
 # Installation:
-pip install Django,
+pip install Django
+
 pip install image
